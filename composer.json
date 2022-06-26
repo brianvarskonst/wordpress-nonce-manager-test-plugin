@@ -1,0 +1,54 @@
+{
+    "name": "brianvarskonst/wordpress-nonce-manager-test-plugin",
+    "description": "WordPress Nonce in an Object Oriented Way",
+    "type": "library",
+    "license": "GPL2",
+    "keywords": [
+        "wordpress",
+        "wordpress-nonce",
+        "wordpress-security"
+    ],
+    "authors": [
+        {
+          "name": "Brian Schäffner",
+          "email": "burnify.design@gmail.com",
+          "role":  "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/brianvarskonst/wordpress-nonce-oop/issues"
+    },
+    "require": {
+        "php": ">=7.4",
+        "brianvarskonst/wordpress-nonce-oop": "dev-feature/upgrade"
+    },
+    "require-dev": {
+        "inpsyde/php-coding-standards": "^1.0",
+        "symfony/var-dumper": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+          "NoncesManager\\": "src/NoncesManager"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NoncesManager\\Tests\\": "tests/src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:brianvarskonst/wordpress-nonce-oop.git"
+        }
+    ]
+}
